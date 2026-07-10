@@ -1,0 +1,32 @@
+============================================================
+Talk2Mind - Model Evaluation Report
+============================================================
+
+Facial Emotion Model Accuracy: 0.988
+Speech Emotion Model Accuracy: 0.750
+
+Fusion MLP - Mental Well-Being Score Regression:
+  MAE:  4.76
+  RMSE: 6.02
+  R2:   0.789
+
+Derived Risk Category Accuracy: 0.792
+
+Confusion Matrix (rows=actual, cols=predicted):
+                  Good  Mild Concern  Moderate Concern  High Concern
+Good                28            18                 0             0
+Mild Concern        17           182                24             0
+Moderate Concern     0            10                97             6
+High Concern         0             0                 8            10
+
+Classification Report (risk category):
+                  precision    recall  f1-score   support
+
+            Good       0.62      0.61      0.62        46
+    Mild Concern       0.87      0.82      0.84       223
+Moderate Concern       0.75      0.86      0.80       113
+    High Concern       0.62      0.56      0.59        18
+
+        accuracy                           0.79       400
+       macro avg       0.72      0.71      0.71       400
+    weighted avg       0.80      0.79      0.79       400
